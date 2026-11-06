@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f2e9" />
+    <meta name="description" content="Một góc nhỏ để gặp Nếp và Luna." />
+    <title>Companions — Một góc nhỏ của Nếp và Luna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="companions.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Companions, trang chủ">
+          <span class="wordmark-mark" aria-hidden="true">✳</span>
+          <span>companions<span class="wordmark-dot">.</span></span>
+        </a>
+        <div class="topbar-right">
+          <span class="presence"><span></span> Góc nhỏ đang mở</span>
+        </div>
+      </header>
+
+      <main id="home">
+        <section class="intro-row" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-sparkle">✳</span> COMPANION STUDIO <span class="eyebrow-line"></span> 01 / 02</p>
+            <h1 id="page-title">Một góc nhỏ<br /><span>của tụi mình.</span></h1>
+            <p class="intro-copy">Chọn một người bạn, rồi chọn điều bạn ấy đang làm.</p>
+          </div>
+          <div class="intro-sticker" aria-hidden="true"><span>♥</span><small>made for<br />slow days</small></div>
+        </section>
+
+        <section class="studio" aria-label="Companion studio">
+          <aside class="rail panel">
+            <div class="rail-heading"><span>BẠN ĐỒNG HÀNH</span><span class="count-pill">02</span></div>
+            <div class="companion-list" id="companion-list" aria-label="Chọn bạn đồng hành"></div>
+            <div class="rail-note"><span class="note-icon" aria-hidden="true">✦</span><p>Thêm nhân vật mới<br />trong những ngày tới.</p></div>
+            <div class="rail-footer"><span class="online-dot"></span> Tất cả đều ổn</div>
+          </aside>
+
+          <section class="stage panel" aria-labelledby="stage-name">
+            <div class="stage-topline"><span id="stage-caption">NEP’S CORNER</span><button class="more-button" type="button" aria-label="Tùy chọn thêm">···</button></div>
+            <div class="stage-scene" id="stage-scene">
+              <div class="portal-gate" id="portal-gate" aria-hidden="true"><span class="portal-sheen"></span><span class="portal-spark portal-spark-one">✦</span><span class="portal-spark portal-spark-two">✧</span></div>
+              <div class="scene-orbit orbit-one"></div><div class="scene-orbit orbit-two"></div>
+              <span class="scene-star star-one" aria-hidden="true">✳</span><span class="scene-star star-two" aria-hidden="true">✦</span>
+              <span class="scene-cloud cloud-one" aria-hidden="true"></span><span class="scene-cloud cloud-two" aria-hidden="true"></span>
+              <div class="chat-bubble" id="chat-bubble"><span class="bubble-sparkle" aria-hidden="true">✦</span><span id="companion-message">Này, bạn đến rồi!</span></div>
+              <div class="companion-art-wrap">
+                <div id="companion-art" class="companion-art nep-art" role="img" aria-label="Nếp đang đứng"></div>
+                <div id="luna-art" class="luna-art" aria-hidden="true"><img id="luna-image" src="" alt="" /><span class="luna-effect effect-tea" aria-hidden="true">♨</span><span class="luna-effect effect-thought" aria-hidden="true">···</span><span class="luna-effect effect-sleep" aria-hidden="true">Z<span>z</span></span></div>
+              </div>
+              <div class="scene-ground"></div>
+              <div class="scene-label"><span class="scene-label-mark" id="scene-mark">N</span><span><strong id="stage-name">Nếp</strong><small id="stage-role">bạn đồng hành • luôn sẵn sàng</small></span></div>
+              <span class="scene-coordinate">HÔM NAY, CÙNG NHAU</span>
+            </div>
+            <div class="stage-footer"><span><span class="live-dot"></span> ĐANG Ở ĐÂY</span><span id="stage-state-summary">nghỉ ngơi một chút</span></div>
+          </section>
+
+          <aside class="controls panel">
+            <div class="controls-heading"><div><p class="eyebrow small-eyebrow">CHẾ ĐỘ HIỆN TẠI</p><h2 id="controls-title">Nếp đang nghỉ</h2></div><span class="status-sparkle" aria-hidden="true">✳</span></div>
+            <div class="state-list" id="state-list" aria-label="Chọn trạng thái"></div>
+            <div class="control-divider"></div>
+            <div class="motion-setting"><span><strong>Giảm chuyển động</strong><small>Tôn trọng tùy chọn thiết bị</small></span><span class="motion-check" id="motion-check" aria-hidden="true"></span></div>
+            <div class="tip-card"><span class="tip-icon" aria-hidden="true">✿</span><p><strong>Một lời nhắn nhỏ</strong><span id="tip-copy">Nếp luôn ở đây nếu bạn cần một người bạn.</span></p></div>
+            <p class="asset-note" id="asset-note"></p>
+          </aside>
+        </section>
+        <footer class="page-footer"><span>NHỮNG NGƯỜI BẠN NHỎ CỦA BẠN</span><span>THIẾT KẾ VỚI <span class="heart">♥</span> VÀ MỘT CHÚT TRÀ</span></footer>
+      </main>
+    </div>
+  </body>
+</html>
